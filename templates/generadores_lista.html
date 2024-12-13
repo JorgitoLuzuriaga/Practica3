@@ -1,0 +1,99 @@
+{% extends "inicio.html" %}
+{% block content %}
+<div class="container mt-5">
+
+    {% if resultado %}
+    <div class="alert alert-warning text-center shadow-sm">
+        <h4 class="mb-2">Resultado de la búsqueda:</h4>
+        <p>{{ resultado }}</p>
+    </div>
+    {% endif %}
+
+    <h1 class="text-center text-danger mb-4">Generadores Disponibles</h1>
+
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <a href="/crear_generador" class="btn btn-lg btn-info shadow-sm">
+                <i class="bi bi-plus-circle"></i> Crear Generador
+            </a>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-primary">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="card-title mb-0">Ordenar Generadores</h4>
+                </div>
+                <div class="card-body">
+                    <form action="/ordenar" method="POST">
+                        <div class="mb-3">
+                            <label for="metodo" class="form-label">Método de ordenación:</label>
+                            <select name="metodo" id="metodo" class="form-select">
+                                <option value="quick">QuickSort</option>
+                                <option value="merge">MergeSort</option>
+                                <option value="shell">ShellSort</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="criterio" class="form-label">Criterio:</label>
+                            <select name="criterio" id="criterio" class="form-select">
+                                <option value="id">ID del generador</option>
+                                <option value="modelo">Modelo del generador</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="orden" class="form-label">Orden:</label>
+                            <select name="orden" id="orden" class="form-select">
+                                <option value="asc">A-Z</option>
+                                <option value="desc">Z-A</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">
+                            <i class="bi bi-sort-alpha-down"></i> Ordenar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <table class="table table-bordered table-hover shadow-sm">
+                        <thead class="bg-dark text-white">
+                            <tr>
+                                <th>ID</th>
+                                <th>Modelo</th>
+                                <th>Uso</th>
+                                <th>Coste</th>
+                                <th>Consumo por Hora</th>
+                                <th>Capacidad de Generación</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for generador in generadores %}
+                            <tr>
+                                <td>{{ generador.id }}</td>
+                                <td>{{ generador.modelo }}</td>
+                                <td>{{ generador.uso }}</td>
+                                <td>{{ generador.coste }}</td>
+                                <td>{{ generador.consumoPorHora }}</td>
+                                <td>{{ generador.capacidadGeneracion }}</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <a href="/modificar_generador/{{ generador.id }}" class="btn btn-sm btn-warning">Modificar</a>
+                                        <a href="/eliminar_generador/{{ generador.id }}" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

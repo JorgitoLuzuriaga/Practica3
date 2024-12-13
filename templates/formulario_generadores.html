@@ -1,0 +1,32 @@
+{% extends "inicio.html" %}
+
+{% block content %}
+<div class="card shadow-lg p-5">
+    <h2 class="text-center text-success mb-4">{{ title }}</h2>
+    <form method="POST">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="modelo" class="form-label">Modelo:</label>
+                <input type="text" name="modelo" id="modelo" class="form-control form-control-lg" value="{{ generador.get('modelo', '') }}" required>
+            </div>
+            <div class="col-md-6">
+                <label for="uso" class="form-label">Uso:</label>
+                <input type="text" name="uso" id="uso" class="form-control form-control-lg" value="{{ generador.get('uso', '') }}" required>
+            </div>
+            <div class="col-md-6">
+                <label for="coste" class="form-label">Coste:</label>
+                <input type="number" name="coste" id="coste" class="form-control form-control-lg" value="{{ generador.get('coste', 0) }}" required>
+            </div>
+            <div class="col-md-6">
+                <label for="consumoPorHora" class="form-label">Consumo por Hora:</label>
+                <input type="number" name="consumoPorHora" id="consumoPorHora" class="form-control form-control-lg" value="{{ generador.get('consumoPorHora', 0) }}" required>
+            </div>
+            <div class="col-md-6">
+                <label for="capacidadGeneracion" class="form-label">Capacidad de Generación:</label>
+                <input type="number" name="capacidadGeneracion" id="capacidadGeneracion" class="form-control form-control-lg" value="{{ generador.get('capacidadGeneracion', 0) }}" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4 w-100">Guardar</button>
+    </form>
+</div>
+{% endblock %}
