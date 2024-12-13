@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "modelo": "Uno",
+        "uso": "Pizzeria",
+        "coste": 1000000.0,
+        "consumoPorHora": 4.0,
+        "capacidadGeneracion": 1000.0
+    },
+    {
+        "id": 2,
+        "modelo": "Dos",
+        "uso": "Trabajo",
+        "coste": 2.0,
+        "consumoPorHora": 3.0,
+        "capacidadGeneracion": 1.0
+    },
+    {
+        "id": 3,
+        "modelo": "Cuatro",
+        "uso": "Hogar",
+        "coste": 50.0,
+        "consumoPorHora": 101.0,
+        "capacidadGeneracion": 0.0
+    },
+    {
+        "id": 4,
+        "modelo": "Mediano",
+        "uso": "Iluminacion",
+        "coste": 7.0,
+        "consumoPorHora": 2.0,
+        "capacidadGeneracion": 1.0
+    },
+    {
+        "id": 5,
+        "modelo": "Cinco",
+        "uso": "Enseñanza",
+        "coste": 10000.0,
+        "consumoPorHora": 80.0,
+        "capacidadGeneracion": 1200.0
+    },
+    {
+        "id": 6,
+        "modelo": "Seis",
+        "uso": "Barberia",
+        "coste": 23.0,
+        "consumoPorHora": 32.0,
+        "capacidadGeneracion": 441.0
+    },
+    {
+        "id": 7,
+        "modelo": "Siete",
+        "uso": "Hotel",
+        "coste": 5210.0,
+        "consumoPorHora": 1021.0,
+        "capacidadGeneracion": 1011.0
+    },
+    {
+        "id": 8,
+        "modelo": "Ocho",
+        "uso": "Restaurante",
+        "coste": 721.0,
+        "consumoPorHora": 22.30,
+        "capacidadGeneracion": 12.30
+    },
+    {
+        "id": 9,
+        "modelo": "Nueve",
+        "uso": "Local",
+        "coste": 1123.0,
+        "consumoPorHora": 44.20,
+        "capacidadGeneracion": 431.20
+    },
+    {
+        "id": 10,
+        "modelo": "Diez",
+        "uso": "Escuela",
+        "coste": 2123.0,
+        "consumoPorHora": 343.0,
+        "capacidadGeneracion": 143.0
+    },
+    {
+        "id": 11,
+        "modelo": "Once",
+        "uso": "Hospital",
+        "coste": 5340.0,
+        "consumoPorHora": 112.0,
+        "capacidadGeneracion": 860.0
+    },
+    {
+        "id": 12,
+        "modelo": "Doce",
+        "uso": "Prision",
+        "coste": 752.01,
+        "consumoPorHora": 4.014,
+        "capacidadGeneracion": 144.210
+    },
+    {
+        "id": 13,
+        "modelo": "Trece",
+        "uso": "Terminal",
+        "coste": 21.50,
+        "consumoPorHora": 33.03,
+        "capacidadGeneracion": 13.02
+    },
+    {
+        "id": 14,
+        "modelo": "Catorce",
+        "uso": "Bar",
+        "coste": 5.120,
+        "consumoPorHora": 12.10,
+        "capacidadGeneracion": 10.20
+    },
+    {
+        "id": 15,
+        "modelo": "Quince",
+        "uso": "Universidad",
+        "coste": 74.30,
+        "consumoPorHora": 14.024,
+        "capacidadGeneracion": 1.220
+    }
+]

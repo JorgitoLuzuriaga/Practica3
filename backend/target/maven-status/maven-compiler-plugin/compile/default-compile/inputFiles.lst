@@ -1,0 +1,11 @@
+/home/george/Escritorio/PracticaNro3/backend/src/main/java/com/example/controller/tda/Node.java
+/home/george/Escritorio/PracticaNro3/backend/src/main/java/com/example/rest/Main.java
+/home/george/Escritorio/PracticaNro3/backend/src/main/java/com/example/rest/GeneradorApi.java
+/home/george/Escritorio/PracticaNro3/backend/src/main/java/com/example/models/Generador.java
+/home/george/Escritorio/PracticaNro3/backend/src/main/java/com/example/controller/dao/implement/InterfazDao.java
+/home/george/Escritorio/PracticaNro3/backend/src/main/java/com/example/controller/dao/services/GeneradorService.java
+/home/george/Escritorio/PracticaNro3/backend/src/main/java/com/example/controller/excepcion/OverFlowException.java
+/home/george/Escritorio/PracticaNro3/backend/src/main/java/com/example/controller/excepcion/ListEmptyException.java
+/home/george/Escritorio/PracticaNro3/backend/src/main/java/com/example/controller/dao/GeneradorDao.java
+/home/george/Escritorio/PracticaNro3/backend/src/main/java/com/example/controller/tda/LinkedList.java
+/home/george/Escritorio/PracticaNro3/backend/src/main/java/com/example/controller/dao/implement/AdapterDao.java
